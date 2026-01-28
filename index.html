@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Пекара Чича и Неле - Један залогај је довољан да знаш да си на правом месту. Два локала у Нишу. Достава преко Wolt-а и Glovo-а.">
+    <title>Пекара Чича и Неле | Један залогај је довољан да знаш да си на правом месту.</title>
+    <link rel="icon" type="image/png" href="img/cica-i-nele-logo.png">
+    <link rel="apple-touch-icon" href="img/cica-i-nele-logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <a href="#pocetna" class="logo">
+                <img src="img/cica-i-nele-logo.png" alt="Pekara Чича и Неле Logo">
+            </a>
+            <button class="nav-toggle" aria-label="Отвори мени" aria-expanded="false">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav-menu">
+                <li><a href="#pocetna" class="nav-link">Почетна</a></li>
+                <li><a href="#specijaliteti" class="nav-link">Специјалитети</a></li>
+                <li><a href="#o-nama" class="nav-link">О Нама</a></li>
+                <li><a href="#galerija" class="nav-link">Галерија</a></li>
+                <li><a href="#kontakt" class="nav-link">Контакт</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="pocetna" class="hero">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="video/cica-i-nele-video-1.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <div class="hero-left">
+                <div class="hero-badge">Основана 2006. у Нишу</div>
+                <h1 class="hero-title">Чича и Неле</h1>
+                <p class="hero-tagline">Један залогај је довољан да знаш да си на правом месту.</p>
+                <p class="hero-description">100% природно · Без адитива · Свежина без компромиса</p>
+                <div class="hero-cta">
+                    <a href="#kontakt" class="btn btn-primary">Наручи</a>
+                </div>
+            </div>
+            <div class="hero-right">
+                <a href="#specijaliteti" class="btn btn-secondary btn-order">Наши Специјалитети</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Specialties Section -->
+    <section id="specijaliteti" class="specialties">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Издвајамо</span>
+                <h2 class="section-title">Наши Специјалитети</h2>
+                <div class="title-ornament"></div>
+            </div>
+            
+            <div class="specialties-intro">
+                <p>У срцу Ниша, градимо поверење наших суграђана. Сваки производ правимо са истом пажњом као првог дана — од одабраних састојака, без адитива, са љубављу према занатском пекарству.</p>
+            </div>
+
+            <div class="specialties-grid">
+                <article class="specialty-card specialty-featured">
+                    <div class="specialty-image">
+                        <img src="img/cicin-burek.avif" alt="Чичин бурек" loading="lazy">
+                        <div class="specialty-badge">Препорука куће</div>
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Чичин Бурек</h3>
+                        <p>Наш потпис. Традиционални нишки бурек са сочним филом — доступан у различитим варијантама. Хрскава кора, сочан фил, без компромиса.</p>
+                        <span class="specialty-tag">Традиционално</span>
+                    </div>
+                </article>
+
+                <article class="specialty-card">
+                    <div class="specialty-image">
+                        <img src="img/burek-sa-mesom.avif" alt="Бурек са месом" loading="lazy">
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Бурек са Месом</h3>
+                        <p>Класик нишког пекарства. Сочан бурек са квалитетним месом — хрскава кора, богат фил. Савршен избор за брзи оброк.</p>
+                    </div>
+                </article>
+
+                <article class="specialty-card">
+                    <div class="specialty-image">
+                        <img src="img/burek-sa-sirom.avif" alt="Бурек са сиром" loading="lazy">
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Бурек са Сиром</h3>
+                        <p>Класик који никада не излази из моде. Танак, хрскав, са обиљем домаћег сира.</p>
+                    </div>
+                </article>
+
+                <article class="specialty-card">
+                    <div class="specialty-image">
+                        <img src="img/Pizza-Capriciossa.avif" alt="Пица Каприћоза" loading="lazy">
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Пица Каприћоза</h3>
+                        <p>Класична италијанска пица са домаћим тестом. Свеж сир, шунка и печурке — без вештачких додатака.</p>
+                    </div>
+                </article>
+
+                <article class="specialty-card">
+                    <div class="specialty-image">
+                        <img src="img/mantije.avif" alt="Мантије" loading="lazy">
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Мантије</h3>
+                        <p>Традиционално босанско јело са сочним месом. Правиле се по старом рецепту са љубављу.</p>
+                    </div>
+                </article>
+
+                <article class="specialty-card">
+                    <div class="specialty-image">
+                        <img src="img/italijanska-piroska.avif" alt="Италијанска пирошка" loading="lazy">
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Италијанска Пирошка</h3>
+                        <p>Хрскава пирошка са италијанским укусима. Савршена комбинација традиције и модерне кухиње.</p>
+                    </div>
+                </article>
+
+                <article class="specialty-card">
+                    <div class="specialty-image">
+                        <img src="img/ljuta-pitica.avif" alt="Љута питица" loading="lazy">
+                    </div>
+                    <div class="specialty-content">
+                        <h3>Љута Питица</h3>
+                        <p>За љубитеље зачињеног укуса. Питица са правим зачинима и сочним филом.</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="o-nama" class="about">
+        <video class="about-video" autoplay muted loop playsinline>
+            <source src="video/cica-i-nele-video-2.mp4" type="video/mp4">
+        </video>
+        <div class="about-overlay"></div>
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-content">
+                    <span class="section-label">Наша прича</span>
+                    <h2 class="section-title">Традиција Укуса</h2>
+                    <div class="title-ornament"></div>
+                    <p class="about-lead">Пекара Чича и Неле није само место где се прави хлеб — то је место где се чува традиција нишког пекарства.</p>
+                    <p>Свако јутро, док град још спава, наши пекари започињу дан. Тесто се меси рукама, бурек се развлачи пажљиво, пецива улазе у вруће пећи. Мирис свежег хлеба шири се улицама.</p>
+                    <p>За нас, квалитет није опција — то је обећање. Користимо само проверене састојке, без адитива и вештачких додатака. Јер наши купци заслужују најбоље.</p>
+                    
+                    <div class="about-features">
+                        <div class="feature">
+                            <div class="feature-icon">✦</div>
+                            <div class="feature-text">
+                                <strong>Традиционални Рецепти</strong>
+                                <span>Аутентичан укус нишког пекарства</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✦</div>
+                            <div class="feature-text">
+                                <strong>Без Адитива</strong>
+                                <span>Природни састојци</span>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature-icon">✦</div>
+                            <div class="feature-text">
+                                <strong>Два Локала</strong>
+                                <span>Доступни у центру Ниша</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-images">
+                    <div class="about-image-main">
+                        <img src="img/cica-i-nele-inside.jpg" alt="Унутрашњост пекаре" loading="lazy">
+                    </div>
+                    <div class="about-image-secondary">
+                        <img src="img/cica-i-nele-inside-2.jpg" alt="Унутрашњост пекаре" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="galerija" class="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Из наше витрине</span>
+                <h2 class="section-title">Галерија Укуса</h2>
+                <div class="title-ornament"></div>
+            </div>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item" 
+                     data-title="Сендвич са Куленом" 
+                     data-description="Домаћи хлеб, квалитетан кулен и свежи састојци. Једноставно, онако како су наше баке правиле.">
+                    <img src="img/sendvic-kulen.avif" alt="Сендвич са куленом" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Сендвич са Куленом</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                     data-title="Пица Каприћоза"
+                     data-description="Класична италијанска пица са домаћим тестом. Свеж сир, шунка и печурке — без вештачких додатака.">
+                    <img src="img/Pizza-Capriciossa.avif" alt="Пица каприћоза" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Пица Каприћоза</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                     data-title="Рол Кулен Зденка"
+                     data-description="Мекано тесто увијено са куленом по традиционалном рецепту. Права домаћа сластица без конзерванса.">
+                    <img src="img/rol-kulen-zdenka.avif" alt="Рол кулен зденка" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Рол Кулен Зденка</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                     data-title="Француски Кроасан са Вишњом"
+                     data-description="Сочне вишње у хрскавом кроасану. Користимо само квалитетне састојке од проверених добављача.">
+                    <img src="img/Francuski-kroasan-pavlaka-visnja.avif" alt="Француски кроасан са вишњом" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Француски Кроасан са Вишњом</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                     data-title="Дубаи Колач"
+                     data-description="Луксузни колач са богатим укусом. Прави специјалитет који чува традицију са модерним приступом.">
+                    <img src="img/dubai-kolac.avif" alt="Дубаи колач" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Дубаи Колач</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                     data-title="Цимет Ролница са Јабуком"
+                     data-description="Танко развучена кора пуњена сочном јабуком и циметом. Традиционални рецепт који чува укус наших крајева.">
+                    <img src="img/cimet-rolnica-sa-jabukom.avif" alt="Цимет ролница са јабуком" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Цимет Ролница са Јабуком</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                     data-title="Погача Сунце"
+                     data-description="Хрскава погача са традиционалним укусом — савршена за сваки оброк. Направљена по оригиналном рецепту.">
+                    <img src="img/pogaca-sunce.avif" alt="Погача сунце" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Погача Сунце</span>
+                    </div>
+                </div>
+                <div class="gallery-item"
+                     data-title="Грчка Питића са Спанаћем"
+                     data-description="Традиционални специјалитет са сочним спанаћем на хрскавом тесту. Аутентичан укус, припремљен са поштовањем традиције.">
+                    <img src="img/grcka-pitica-spanac.avif" alt="Грчка питића са спанаћем" loading="lazy">
+                    <div class="gallery-overlay">
+                        <span>Грчка Питића са Спанаћем</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="kontakt" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Посетите нас</span>
+                <h2 class="section-title">Контакт</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="delivery-buttons-full">
+                <a href="https://wolt.com/sr/srb/nis/venue/pekara-ia-i-nele" class="btn-delivery btn-wolt" target="_blank" rel="noopener">
+                    Наручи на <img src="logos/wolt-white.png" alt="Wolt" class="delivery-icon-inline"> →
+                </a>
+                <a href="https://glovoapp.com/sr/rs/nis/stores/pekara-cica-i-nele-nis" class="btn-delivery btn-glovo" target="_blank" rel="noopener">
+                    Наручи на <img src="logos/glovo-white.png" alt="Glovo" class="delivery-icon-inline"> →
+                </a>
+            </div>
+
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Локација #1</h3>
+                            <p>Књажевачка 14</p>
+                            <p>18000, Ниш, Србија</p>
+                            <a href="https://maps.app.goo.gl/VnLZNRhKn63YvgM87" class="contact-link" target="_blank" rel="noopener">
+                                Прикажи на мапи →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Локација #2</h3>
+                            <p>Студеничка 55</p>
+                            <p>Ниш, Србија</p>
+                            <a href="https://maps.app.goo.gl/PD8mUGjF6dgc3GrE9" class="contact-link" target="_blank" rel="noopener">
+                                Прикажи на мапи →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Телефон</h3>
+                            <p>018571787</p>
+                            <a href="tel:018571787" class="contact-link">
+                                Позови →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Е-пошта</h3>
+                            <p>cicainele@gmail.com</p>
+                            <a href="mailto:cicainele@gmail.com" class="contact-link">
+                                Пошаљи поруку →
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h3>Радно Време</h3>
+                            <div class="hours-table">
+                                <div class="hours-row">
+                                    <span>Понедељак - Среда</span>
+                                    <span class="hours-open">6:00 - 20:00</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span>Четвртак - Субота</span>
+                                    <span class="hours-open">6:00 - 20:00</span>
+                                </div>
+                                <div class="hours-row">
+                                    <span>Недеља</span>
+                                    <span class="hours-closed">Затворено</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contact-maps">
+                    <div class="map-container">
+                        <h3 class="map-title">Локација #1</h3>
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.8899896883776!2d21.895833!3d43.319722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0bda98dc411%3A0x5a3a1a7c3c8e1b5b!2sKnja%C5%BEeva%C4%8Dka%2014%2C%20Ni%C5%A1!5e0!3m2!1ssr!2srs!4v1703184000000!5m2!1ssr!2srs"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Пекара Чича и Неле - Књажевачка 14">
+                            </iframe>
+                        </div>
+                        <p class="map-address">Књажевачка 14, 18000 Ниш</p>
+                        <a href="https://maps.app.goo.gl/VnLZNRhKn63YvgM87" class="map-link" target="_blank" rel="noopener">Отвори у Google Maps →</a>
+                    </div>
+                    
+                    <div class="map-container">
+                        <h3 class="map-title">Локација #2</h3>
+                        <div class="map-wrapper">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2913.8899896883776!2d21.895833!3d43.319722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4755b0bda98dc411%3A0x5a3a1a7c3c8e1b5b!2sStudeni%C4%8Dka%2055%2C%20Ni%C5%A1!5e0!3m2!1ssr!2srs!4v1703184000000!5m2!1ssr!2srs"
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Пекара Чича и Неле - Студеничка 55">
+                            </iframe>
+                        </div>
+                        <p class="map-address">Студеничка 55, Ниш</p>
+                        <a href="https://maps.app.goo.gl/PD8mUGjF6dgc3GrE9" class="map-link" target="_blank" rel="noopener">Отвори у Google Maps →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <img src="img/cica-i-nele-logo.png" alt="Пекара Чича и Неле" class="footer-logo">
+                    <p class="footer-tagline">Један залогај је довољан да знаш да си на правом месту.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h4>Навигација</h4>
+                    <ul>
+                        <li><a href="#pocetna">Почетна</a></li>
+                        <li><a href="#specijaliteti">Специјалитети</a></li>
+                        <li><a href="#o-nama">О Нама</a></li>
+                        <li><a href="#galerija">Галерија</a></li>
+                        <li><a href="#kontakt">Контакт</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-social">
+                    <h4>Пратите нас</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/pekara_cica.i.nele" target="_blank" rel="noopener" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                        </a>
+                        <a href="https://www.facebook.com/PekaraCicaINele/" target="_blank" rel="noopener" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Пекара Чича и Неле. Сва права задржана.</p>
+                <p class="footer-location">Књажевачка 14 & Студеничка 55, Ниш, Србија</p>
+                <p class="footer-made-by">Направио <a href="https://amplifybusiness.pro" target="_blank" rel="noopener">amplifybusiness.pro</a><br>Instagram: <a href="https://instagram.com/pojacajbiznis" target="_blank" rel="noopener">instagram.com/pojacajbiznis</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Gallery Modal -->
+    <div class="modal" id="galleryModal" aria-hidden="true">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" aria-label="Затвори">&times;</button>
+            <div class="modal-image">
+                <img src="" alt="" id="modalImage">
+            </div>
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        const headerEl = document.querySelector('.header');
+
+        navToggle.addEventListener('click', (e) => {
+            e.stopPropagation();
+            const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+            navToggle.setAttribute('aria-expanded', !isExpanded);
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking a link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // Close menu when clicking outside header
+        document.addEventListener('click', (e) => {
+            if (navMenu.classList.contains('active') && !headerEl.contains(e.target)) {
+                navMenu.classList.remove('active');
+                navToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header background on scroll
+        const header = document.querySelector('.header');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+
+        // Gallery Modal
+        const modal = document.getElementById('galleryModal');
+        const modalImage = document.getElementById('modalImage');
+        const modalTitle = document.getElementById('modalTitle');
+        const modalDescription = document.getElementById('modalDescription');
+        const modalClose = document.querySelector('.modal-close');
+        const modalBackdrop = document.querySelector('.modal-backdrop');
+
+        // Open modal when clicking gallery items
+        document.querySelectorAll('.gallery-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const img = item.querySelector('img');
+                const title = item.dataset.title;
+                const description = item.dataset.description;
+
+                modalImage.src = img.src;
+                modalImage.alt = img.alt;
+                modalTitle.textContent = title;
+                modalDescription.textContent = description;
+
+                modal.classList.add('active');
+                modal.setAttribute('aria-hidden', 'false');
+                document.body.style.overflow = 'hidden';
+            });
+        });
+
+        // Close modal functions
+        function closeModal() {
+            modal.classList.remove('active');
+            modal.setAttribute('aria-hidden', 'true');
+            document.body.style.overflow = '';
+        }
+
+        modalClose.addEventListener('click', closeModal);
+        modalBackdrop.addEventListener('click', closeModal);
+
+        // Close on Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && modal.classList.contains('active')) {
+                closeModal();
+            }
+        });
+    </script>
+</body>
+</html>
+
