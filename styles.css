@@ -142,6 +142,10 @@ p {
     margin-bottom: var(--space-sm);
 }
 
+.spacer {
+    height: var(--space-lg);
+}
+
 /* Section Styling */
 .section-header {
     text-align: center;
@@ -921,6 +925,7 @@ p {
 .contact-grid {
     display: grid;
     gap: var(--space-xl);
+    grid-template-columns: 1fr;
 }
 
 .contact-info {
@@ -937,11 +942,54 @@ p {
     border: 1px solid rgba(220, 20, 60, 0.15);
     transition: all var(--transition-base);
     height: fit-content;
+    flex-direction: column;
+    width: 100%;
 }
 
 .contact-card:hover {
     border-color: rgba(220, 20, 60, 0.3);
     transform: translateY(-2px);
+}
+
+.contact-card .contact-icon {
+    align-self: flex-start;
+}
+
+.contact-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.contact-location-name {
+    color: var(--color-primary);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.contact-card .contact-details {
+    flex: 1;
+}
+
+.contact-card .map-wrapper {
+    margin-top: var(--space-md);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    border: 1px solid rgba(220, 20, 60, 0.1);
+    height: 400px;
+}
+
+.contact-card .map-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    filter: grayscale(20%) contrast(1);
+    transition: filter var(--transition-base);
+}
+
+.contact-card .map-wrapper:hover iframe {
+    filter: grayscale(0%) contrast(1);
 }
 
 .contact-icon {
@@ -954,11 +1002,64 @@ p {
     background: rgba(220, 20, 60, 0.1);
     border-radius: 50%;
     color: var(--color-primary);
+    overflow: hidden;
+}
+
+.contact-icon img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .contact-details h3 {
     font-size: 1.1rem;
     margin-bottom: var(--space-xs);
+}
+
+.contact-info-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-sm);
+}
+
+.contact-info-card {
+    background: rgba(220, 20, 60, 0.05);
+    border: 1px solid rgba(220, 20, 60, 0.1);
+    border-radius: var(--radius-md);
+    padding: var(--space-sm);
+    transition: all var(--transition-base);
+}
+
+.contact-info-card:hover {
+    background: rgba(220, 20, 60, 0.08);
+    border-color: rgba(220, 20, 60, 0.2);
+}
+
+.contact-info-card h3 {
+    font-size: 0.9rem;
+    margin-bottom: var(--space-xs);
+    color: var(--color-accent);
+}
+
+.contact-info-card p {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 0.5rem;
+}
+
+.contact-info-card .contact-link {
+    font-size: 0.8rem;
+    margin-top: var(--space-xs);
+}
+
+.contact-info-card .hours-table {
+    margin-top: 0;
+}
+
+.contact-info-card .hours-row {
+    padding: 0.2rem 0;
+    font-size: 0.8rem;
 }
 
 .contact-details p {
@@ -1272,7 +1373,7 @@ p {
     
     /* Contact */
     .contact-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
     }
     
     .contact-maps {
@@ -1371,17 +1472,47 @@ p {
     
     /* Contact */
     .contact-grid {
-        grid-template-columns: 1fr 1.5fr;
-        gap: var(--space-2xl);
+        grid-template-columns: 1fr;
     }
     
-    .contact-maps {
-        grid-template-columns: 1fr;
-        gap: var(--space-xl);
+    /* Contact Info Cards - Desktop Layout */
+    .contact-info-cards {
+        flex-direction: column;
+        gap: var(--space-sm);
+    }
+    
+    .contact-info-card {
+        flex: 1;
     }
     
     .contact-card {
-        padding: var(--space-lg);
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    .contact-card .contact-icon {
+        align-self: flex-start;
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+    
+    .contact-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-xs);
+        margin-bottom: var(--space-md);
+        margin-right: var(--space-md);
+    }
+    
+    .contact-card .contact-details {
+        flex: 0 0 300px;
+        margin-right: var(--space-md);
+    }
+    
+    .contact-card .map-wrapper {
+        margin-top: 0;
+        flex: 1;
+        height: 600px;
     }
 }
 
