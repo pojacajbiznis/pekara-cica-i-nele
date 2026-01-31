@@ -795,7 +795,7 @@ p {
 }
 
 .about-content .title-ornament {
-    margin: 0 0 var(--space-lg) 0;
+    margin: 0 0 var(--space-lg) var(--space-sm);
 }
 
 .about-lead {
@@ -950,6 +950,10 @@ p {
 .contact-card:hover {
     border-color: rgba(220, 20, 60, 0.3);
     transform: translateY(-2px);
+}
+
+.contact-card.contact-card-email .contact-details {
+    max-height: fit-content;
 }
 
 .contact-card .contact-icon {
