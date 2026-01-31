@@ -901,7 +901,8 @@ p {
 .gallery-overlay span {
     font-family: var(--font-display);
     font-size: 1rem;
-    color: var(--color-white);
+    color: var(--color-bg-section);
+    font-weight: 600;
 }
 
 .gallery-item:hover img {
