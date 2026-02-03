@@ -355,7 +355,7 @@ p {
     width: 60px;
     height: 60px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 12px;
     transition: transform var(--transition-base);
 }
 
@@ -1004,7 +1004,6 @@ p {
     align-items: center;
     justify-content: center;
     background: rgba(220, 20, 60, 0.1);
-    border-radius: 50%;
     color: var(--color-primary);
     overflow: hidden;
 }
@@ -1013,7 +1012,7 @@ p {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 12px;
 }
 
 .contact-details h3 {
@@ -1196,7 +1195,7 @@ p {
     width: 80px;
     height: 80px;
     object-fit: cover;
-    border-radius: 50%;
+    border-radius: 16px;
     margin-bottom: var(--space-sm);
 }
 
