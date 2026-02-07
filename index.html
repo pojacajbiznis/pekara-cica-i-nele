@@ -28,6 +28,7 @@
                 <li><a href="#o-nama" class="nav-link">О Нама</a></li>
                 <li><a href="#galerija" class="nav-link">Галерија</a></li>
                 <li><a href="#kontakt" class="nav-link">Контакт</a></li>
+                <li><a href="#posao" class="nav-link">Посао</a></li>
             </ul>
         </nav>
     </header>
@@ -504,6 +505,70 @@
         </div>
     </section>
 
+    <!-- Jobs Section -->
+    <section id="posao" class="jobs">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Придружи нам се</span>
+                <h2 class="section-title">Пријава за посао</h2>
+                <div class="title-ornament"></div>
+            </div>
+
+            <div class="jobs-container">
+                <form id="jobForm" class="jobs-form">
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="firstName">Име</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="lastName">Презиме</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Телефон</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="position">Радна позиција</label>
+                            <input type="text" id="position" name="position" placeholder="нпр. Пекар, Продавац..." required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="experience">Радно искуство</label>
+                        <textarea id="experience" name="experience" rows="4" placeholder="Опишите ваше претходно радно искуство..." required></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Смене (могуће више опција)</label>
+                        <div class="checkbox-group">
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="shifts" value="1. смена">
+                                <span class="checkmark"></span>
+                                1. смена
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="shifts" value="2. смена">
+                                <span class="checkmark"></span>
+                                2. смена
+                            </label>
+                            <label class="checkbox-container">
+                                <input type="checkbox" name="shifts" value="3. смена">
+                                <span class="checkmark"></span>
+                                3. смена
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary">Пошаљи пријаву</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -655,6 +720,37 @@
                 closeModal();
             }
         });
+
+        // Job Form Logic
+        const jobForm = document.getElementById('jobForm');
+        if (jobForm) {
+            jobForm.addEventListener('submit', function(e) {
+                e.preventDefault();
+                
+                const firstName = document.getElementById('firstName').value;
+                const lastName = document.getElementById('lastName').value;
+                const phone = document.getElementById('phone').value;
+                const position = document.getElementById('position').value;
+                const experience = document.getElementById('experience').value;
+                
+                const shiftCheckboxes = document.querySelectorAll('input[name="shifts"]:checked');
+                const shifts = Array.from(shiftCheckboxes).map(cb => cb.value).join(', ');
+                
+                const emailRecipient = 'cicainelelux@gmail.com';
+                const subject = encodeURIComponent('Пријава за посао');
+                
+                const body = encodeURIComponent(
+                    `Име: ${firstName}\n` +
+                    `Презиме: ${lastName}\n` +
+                    `Телефон: ${phone}\n` +
+                    `Радна позиција: ${position}\n` +
+                    `Радно искуство: ${experience}\n` +
+                    `Смене: ${shifts || 'Није изабрано'}`
+                );
+                
+                window.location.href = `mailto:${emailRecipient}?subject=${subject}&body=${body}`;
+            });
+        }
     </script>
 </body>
 </html>
