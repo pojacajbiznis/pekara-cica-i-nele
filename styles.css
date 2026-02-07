@@ -1354,7 +1354,7 @@ p {
 @media (max-width: 768px) {
     .jobs-container {
         padding: var(--space-xl) var(--space-md);
-        margin: 0 var(--space-md);
+        margin: 0;
     }
     
     .jobs-form .form-grid {
